@@ -1,0 +1,86 @@
+a{
+  color:rgb(255, 253, 243); ;
+  text-decoration: none;
+}
+a:visited{
+  color:rgb(255, 253, 243);
+  text-decoration: none;
+}
+/* 프레임 박스 */
+.cardFrame{
+  margin:0;
+  display: flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items: center;
+  width: 320px;
+  height: 500px;
+  border: 16px solid rgb(255, 253, 243); 
+  opacity: 0.9;
+  color: rgb(255, 253, 243);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.100);
+}
+/* 로고 */
+.logo-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+.logo-box{
+  text-align:end;
+  cursor: default;
+  
+}
+.logo{
+  width: 319px;
+  opacity: 0.8;
+}
+#hyunj{
+  height: 56px;
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 2.1;
+}
+#hyunj:hover{
+  text-shadow: 5px 5px black;
+  transition: 1s;
+}
+#m{
+  font-size: 50px;
+  font-weight: bolder;
+}
+#m:hover{
+  text-shadow: 5px 5px black;
+  transition: 1s;
+}
+#in{
+  font-size: 102px;
+  font-weight: bolder;
+  letter-spacing: -10px;
+}
+#in:hover{
+  text-shadow: 6px 4px black;
+  transition: 1s;
+}
+/* 메뉴아이템 */
+.item-container{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.item{
+  margin: 3px;
+  color: rgb(255, 253, 243);
+  font-size: 25px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.item:hover{
+  opacity:1;
+  transition: 0.5s;
+  text-shadow: 3px 3px black;
+}
+
+

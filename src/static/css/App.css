@@ -7,11 +7,12 @@
   width:calc(120%);
   height:calc(120%);
   background: repeating-linear-gradient(rgb(18, 10, 0),rgb(51, 51, 51) 50% ,rgb(36, 36, 36) 50%,#333);
-    background-size: 10px 5px;
-  filter:url(#noise) blur(1.2px);
+    background-size: 10px 7px;
+  filter:url(#noise) blur(0.8px);
   z-index: -10;
 }
 .section-svg {
   width:0;
   height:0;
 }
+/**배경화면 노이즈 끝 */

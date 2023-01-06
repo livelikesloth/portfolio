@@ -1,3 +1,4 @@
+
 a{
   color:rgb(255, 253, 243); ;
   text-decoration: none;
@@ -19,7 +20,7 @@ a:visited{
   opacity: 0.9;
   color: rgb(255, 253, 243);
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.100);
+  background-color: rgba(255, 255, 255, 0.100);  
 }
 /* 로고 */
 .logo-container{
@@ -28,8 +29,7 @@ a:visited{
 }
 .logo-box{
   text-align:end;
-  cursor: default;
-  
+  cursor:pointer;  
 }
 .logo{
   width: 319px;
@@ -37,29 +37,34 @@ a:visited{
 }
 #hyunj{
   height: 56px;
-  font-size: 50px;
+  font-size: 56px;
   font-weight: bolder;
-  line-height: 2.1;
+  line-height: 2.2;
+  letter-spacing: 2px;
+  transition: 1s;
 }
 #hyunj:hover{
-  text-shadow: 5px 5px black;
+  text-shadow: 5px 4px black;
   transition: 1s;
 }
 #m{
-  font-size: 50px;
+  font-size: 53px;
   font-weight: bolder;
+  line-height: 2.0;
+  transition: 1s;
 }
 #m:hover{
-  text-shadow: 5px 5px black;
+  text-shadow: 5px 4px black;
   transition: 1s;
 }
 #in{
-  font-size: 102px;
-  font-weight: bolder;
-  letter-spacing: -10px;
+  font-size: 112px;
+  text-indent: 2px;
+  text-shadow: 6px 4px black;
+  transition: 1s;
 }
 #in:hover{
-  text-shadow: 6px 4px black;
+  text-shadow: -6px 10px black;
   transition: 1s;
 }
 /* 메뉴아이템 */
@@ -68,7 +73,7 @@ a:visited{
   flex-flow: column wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .item{
   margin: 3px;
@@ -76,6 +81,8 @@ a:visited{
   font-size: 25px;
   font-weight: bold;
   opacity: 0.7;
+  letter-spacing: 1px;
+  transition: 0.5s;
 }
 .item:hover{
   opacity:1;
@@ -83,4 +90,64 @@ a:visited{
   text-shadow: 3px 3px black;
 }
 
+/* modal */
+.modal-inner{
+  color:rgb(51, 51, 51);
 
+}
+.modal-inner .modalNameBox{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: center;
+  margin-top: 20px;
+}
+.modal-inner .modalNameBox img{
+  margin-top:10px;
+  width: 200px;
+  filter:grayscale(50%)
+}
+.nameBox{
+  font-size: 35px;
+}
+.modal-close .logo-box{
+  color : rgb(51, 51, 51);
+  background-color: rgba(0, 0, 0, 0);
+  border:none;
+}
+.modal-close .logo-box:hover{
+  text-shadow: 5px 4px black;
+}
+
+.introduce{
+  color : rgb(36, 36, 36);
+  margin: 10px 20px;
+  font-family:sans-serif;
+  font-size: 15px;
+  font-weight:bolder;
+  text-align:left;
+}
+.introduce h2{
+  text-align: center;
+  margin:30px 0px 10px 0px;
+}
+.introduce .item{
+  text-align: center;
+}
+.introduce .item a{
+  color:rgb(36, 36, 36);
+  font-size: 30px;
+  text-shadow: 0px 0px black;
+}
+.introduce .item:hover{
+  text-shadow: 0px 0px black;
+}
+#email{
+  text-align: center;
+  font-weight:400 ;
+  font-size: 12px
+}
+li{
+  margin-bottom: 3px;
+}

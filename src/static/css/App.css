@@ -1,18 +1,37 @@
 /**배경화면 노이즈 */
-.section-bg{  
+.section-bg {
   display: block;
-  position:fixed;
-  top:-30px;
-  left:-30px;
-  width:calc(120%);
-  height:calc(120%);
-  background: repeating-linear-gradient(rgb(18, 10, 0),rgb(51, 51, 51) 50% ,rgb(36, 36, 36) 50%,#333);
-    background-size: 10px 7px;
-  filter:url(#noise) blur(0.8px);
+  position: fixed;
+  top: -30px;
+  left: -30px;
+  width: calc(120%);
+  height: calc(120%);
+  background: repeating-linear-gradient(
+    rgb(18, 10, 0),
+    rgb(51, 51, 51) 50%,
+    rgb(36, 36, 36) 50%,
+    #333
+  );
+  background-size: 10px 7px;
+  filter: url(#noise) blur(0.8px);
   z-index: -10;
 }
 .section-svg {
-  width:0;
-  height:0;
+  width: 0;
+  height: 0;
 }
+
 /**배경화면 노이즈 끝 */
+
+/* @media all and (min-width: 1024px){
+	/* //브라우저 창 width가 1024px보다 커지는 순간부터 적용
+	//데스크탑 
+}*/
+
+/* 모바일에선 지지직 치우기 */
+@media all and (max-width: 768px) {
+  .section-bg {
+    top: -1000px;
+    left: -1000px;
+  }
+}

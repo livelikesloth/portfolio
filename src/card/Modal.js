@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Logo from "../Logo";
 import Pic from "../static/images/pic.png";
 import Introduce from "./Introduce";
-import Contact from "../Contact";
 
 function Modal({
   className,
@@ -35,22 +34,24 @@ function Modal({
         visible={visible}
       >
         <ModalInner tabIndex="0" className="modal-inner">
-          <div className="modalNameBox">
-            <div className="nameBox">
-              <p>Front End</p>
-              <p>DEVELOPER</p>
-              <p className="Korean">민현진</p>
-            </div>
-            <div>
-              {closable && (
-                <div className="modal-close" onClick={close}>
-                  <Logo />
-                </div>
-              )}
-              {children}
-            </div>
-            <div className="nameBox">
-              <img src={Pic} alt="" />
+          <div className="modalNameBoxContainer">
+            <div className="modalNameBox">
+              <div className="nameBox">
+                <p>Front End</p>
+                <p>DEVELOPER</p>
+                <p className="Korean">민현진</p>
+              </div>
+              <div>
+                {closable && (
+                  <div className="modal-close" onClick={close}>
+                    <Logo />
+                  </div>
+                )}
+                {children}
+              </div>
+              <div className="nameBox">
+                <img src={Pic} alt="사진" />
+              </div>
             </div>
             <Introduce />
           </div>
@@ -75,7 +76,6 @@ const ModalWrapper = styled.div`
   z-index: 1000;
   overflow: auto;
   outline: 0;
-  
 `;
 
 const ModalOverlay = styled.div`
@@ -88,7 +88,6 @@ const ModalOverlay = styled.div`
   right: 0;
   // background-color: rgba(0, 0, 0, 1);
   z-index: 999;
-  
 `;
 
 const ModalInner = styled.div`
@@ -97,7 +96,7 @@ const ModalInner = styled.div`
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   background-color: rgb(255, 253, 243);
   width: 60%;
-  height: 90%;
+  height: 80%;
   top: 50%;
   transform: translateY(-50%);
   margin: 0 auto;
@@ -105,9 +104,18 @@ const ModalInner = styled.div`
   border: ridge 10px rgb(255, 253, 243);
   display: flex;
   flex-flow: column;
-  min-width:325px;
+  min-width: 325px;
   overflow-y: auto;
-
+  // @media screen and(min-width: 768px){
+  //   width: 100%;
+  //   height: 100%;
+  //   margin: 0;
+  // };
+  // @media screen and(max-width: 768px){
+  //   width: 100%;
+  //   height: 100%;
+  //   margin: 0;
+  // };
 `;
 
 export default Modal;

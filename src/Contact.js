@@ -1,7 +1,7 @@
 function Contact(){
   return(
     <p className="item">
-    <a href="mailto:gkwkgo321@gmail.com">CONTACT</a>
+    <a href="https://suinegyzal.notion.site/57c286894950466991a6f5804531ed5e">RESUME</a>
     </p> 
   )
 }
